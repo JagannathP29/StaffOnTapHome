@@ -73,16 +73,16 @@ function handleSearch(searchValue) {
 
     // Show loading state
     showNotification(
-      "Searching for available baristas in " + searchValue + "...",
+      "LAUNCHING SOON...",
       "info",
     );
 
     // Simulate API call
     setTimeout(() => {
-      showNotification("Found 12 available baristas in your area!", "success");
+      showNotification("LAUNCHING SOON...", "success");
     }, 1500);
   } else {
-    showNotification("Please enter a location to search", "warning");
+    showNotification("LAUNCHING SOON...", "warning");
   }
 }
 
@@ -90,16 +90,16 @@ function handleSearch(searchValue) {
 function handleGetStarted(location = "") {
   if (location.trim()) {
     console.log("Getting started with location:", location);
-    showNotification("Redirecting to booking page...", "info");
+    showNotification("LAUNCHING SOON...", "info");
   } else {
     console.log("Getting started without location");
-    showNotification("Redirecting to registration page...", "info");
+    showNotification("LAUNCHING SOON...", "info");
   }
 
   // In a real application, this would redirect to the appropriate page
   setTimeout(() => {
     // window.location.href = '/booking';
-    console.log("Would redirect to booking/registration page");
+    console.log("LAUNCHING SOON...");
   }, 1000);
 }
 
