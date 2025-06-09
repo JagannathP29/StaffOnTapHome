@@ -1,0 +1,202 @@
+.header {
+  height: 88px;
+  width: 100%;
+  background: var(--Colors-Neutral-200);
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logoImage {
+  width: 64px;
+  height: 64px;
+  border-radius: 58px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.logoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 168px;
+  height: 49px;
+}
+
+.companyName {
+  color: #421739;
+  font-family:
+    "Avenir Next LT Pro",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  align-self: stretch;
+}
+
+.tagline {
+  color: #000;
+  font-family:
+    Gontserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  align-self: stretch;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 258px;
+  height: 51px;
+}
+
+.contactButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: var(--Colors-Neutral-200);
+  color: var(--Colors-Neutral-1000);
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contactButton:hover {
+  background: var(--Colors-Neutral-300);
+}
+
+.signupButton {
+  display: flex;
+  width: 108px;
+  height: 51px;
+  padding: 24px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 48px;
+  border: 2px solid var(--Colors-New-Color-200);
+  background: var(--Colors-New-Color-500);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  color: var(--Colors-Neutral-100);
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signupButton:hover {
+  background: var(--Colors-New-Color-600);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .logoText {
+    width: auto;
+  }
+
+  .companyName {
+    font-size: 18px;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
+  .navigation {
+    width: auto;
+    gap: 12px;
+  }
+
+  .contactButton {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .signupButton {
+    width: auto;
+    height: auto;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    gap: 8px;
+  }
+
+  .logoImage {
+    width: 48px;
+    height: 48px;
+  }
+
+  .companyName {
+    font-size: 16px;
+  }
+
+  .tagline {
+    font-size: 12px;
+  }
+
+  .contactButton {
+    display: none;
+  }
+}

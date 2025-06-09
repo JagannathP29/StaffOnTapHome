@@ -1,0 +1,65 @@
+:root {
+  --Colors-Neutral-200: #e8e8e8;
+  --Colors-Neutral-1000: #333;
+  --Colors-New-Color-200: #c496ce;
+  --Colors-New-Color-500: #7c4088;
+  --Colors-Neutral-100: #fff;
+  --Colors-New-Color-100: #d8b9de;
+  --Colors-New-Color-700: #3c1f42;
+  --Colors-Neutral-300: #d2d2d2;
+  --white-light-shade: rgba(245, 245, 245, 1);
+  --Colors-Neutral-500: #a4a4a4;
+  --Colors-Neutral-900: #4a4a4a;
+  --Colors-New-Color-600: #5c2f65;
+  --Colors-Neutral-700: #777;
+  --Colors-Neutral-600: #8e8e8e;
+  --White: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  line-height: 1.6;
+  color: var(--Colors-Neutral-1000);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
